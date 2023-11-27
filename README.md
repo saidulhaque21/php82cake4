@@ -19,12 +19,12 @@ By encapsulating these components within Docker containers, this setup ensures p
 This Dockerized application offers an efficient workflow for web development, facilitating the creation, testing, and deployment of PHP-based web applications while also providing a user-friendly interface, via phpMyAdmin, for database management and manipulation.
 
 # Step 1: Pull 
-pull this docker 
+pull this docker from this repository 
 
-# Step 2: go to docker_php74_mysql_phpmyadmin folder 
+# Step 2: go to php82cake4 folder 
 cd php82cake4
 
-# Step 3: Change env file if you want 
+# Step 3: Change env configures if you want 
 open docker-compose file and cheange database user, pass, port etc if you want 
 
 # Step 4: run compose 
@@ -37,16 +37,16 @@ Now, go to container application directory
  docker exec -it php82cake4 bash
 
 It will show the directory: 
-/var/www/html
+`/var/www/html`
 
 Isside docker, check composer is installed properlly or not using following command: 
-composer -v   
+`composer -v `  
 
 If show the version, composer is ok. 
 
 After that, create a project using following command in the directory - composer /var/www/html:
 
-composer create-project --prefer-dist cakephp/app:~4.0 . 
+`composer create-project --prefer-dist cakephp/app:~4.0 . `
 
 # Step 6: enjoy 
 Browse for cake application  http://localhost:8240/ 
