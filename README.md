@@ -52,5 +52,12 @@ After that, create a project using following command in the directory - composer
 Browse for cake application  http://localhost:8240/ 
 
 For phpMyAdmin http://localhost:8241/
+`
+HOST: mysql_cakedb
+Username: droot
+Pass: Pass123
+Port: 3824 
+`
+
 
 AND enjoy!

@@ -23,7 +23,7 @@ services:
       MYSQL_PASSWORD: Pass123
       MYSQL_DATABASE: myweb_db
     ports:
-      - "3305:3306"
+      - "3824:3306"
     volumes:
       - cakedb_data:/var/lib/mysql
     restart: always
